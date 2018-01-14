@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1500010175 source:c:\users\cs\desktop\engenharia de computacao\sistemas embarcados1\segundaetapa\dft\otimizacao\pic\linezrizacao\testedektop\dftl\dftl\main.c
+	<math.h>
+	<stdbool.h>
+	<stdio.h>
+	<stdlib.h>
+
