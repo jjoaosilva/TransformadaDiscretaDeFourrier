@@ -87,12 +87,25 @@ Podemos observar um erro máximo de 0.3
 
 * Após a linezarização da função seno e cosseno, temos que uma DFT com 512 pontos era executada em 3 minutos e 15 segundos em um PIC18F4550 a 48MHz
 
--------- | Tempos
--------- | ------
-Original | 00:19:50
-CorteI   | 00:10:16
-LS       | 00:07:07
-LSC      | 00:03:15
+-------- | Tempos   | Erro
+-------- | -------- | --------
+Original | 00:19:50 | 0.000045
+CorteI   | 00:10:16 | 0.000045
+LS       | 00:07:07 | 0.035
+LSC      | 00:03:15 | 0.3
+
+#### Onde:
+* CorteI - Corte de iterações
+* LS     - Linearização da função seno
+* LSC    - Linearização da função seno e cosseno
+
+* Por fim, concluímos que após uma redução de 16 minutos e 35 segundos, o erro também aumentou de quase zero para 0.3. Qual abordagem usar, vai depender do seu problema: você quer tempo ou precisão?
+
+### Caso procure
+
+* A pasta DFT.X é um projeto do MplabX
+* Na pasta Linezarizazao temos as funções linezarizadas com suas retas nas pastas LinearizacaoCosseno e LinearizacaoSeno. Já na pasta testeDektop temos testes dessas funções em python e C para desktop.
+
 
 License
 O projeto é licenciado pela MIT License - veja a [LICENSE.md](LICENSE) para mais detalhes
