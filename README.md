@@ -39,19 +39,39 @@ Mesmo com o corte de itereações, o processo ainda era lento. Se você observar
 
 Vale salientar que isso tudo não foi um tiro no escuro: foram substituídas as funções seno e cosseno por equações do primeiro grau quaisquer e foi póssivel observar visualmente que as saídas do PIC estavam sendo geradas mais rapidamente.
 
-#### Linearização da função Seno
+### Linearização da função Seno
 Utilizando a ferramenta Matlab, a função seno foi linearizada dessa forma:
 
 ![alt text](https://github.com/jjoaosilva/TransformadaDiscretaDeFourrier/blob/master/Linearizacao/LinearizacaoSeno/senoL.png?raw=true)
 
 As equações podem ser vistas aqui: [seno](https://github.com/jjoaosilva/TransformadaDiscretaDeFourrier/blob/master/Linearizacao/LinearizacaoSeno/Equacoes.txt)
 
-#### Linearização da função Cosseno
+### Linearização da função Cosseno
 Utilizando a ferramenta Matlab, a função cosseno foi linearizada dessa forma:
 
 ![alt text](https://github.com/jjoaosilva/TransformadaDiscretaDeFourrier/blob/master/Linearizacao/LinearizacaoCosseno/cosseno.jpg?raw=true)
 
 As equações podem ser vistas aqui: [cosseno](https://github.com/jjoaosilva/TransformadaDiscretaDeFourrier/blob/master/Linearizacao/LinearizacaoCosseno/equacoes.txt)
+
+###Testes Após linearização
+
+#### Foram realizados dois testes: 
+* DFT apenas com Seno Linearizado
+* DFT com Seno e Cosseno Linearizado
+
+#### DFT apenas com Seno Linearizado
+
+Utilizando apenas a função seno linearizada e jé comparando com a DFT do Matlab, temos: 
+
+![alt text](https://github.com/jjoaosilva/TransformadaDiscretaDeFourrier/blob/master/imgs/DFT%2BerroComLS.jpg?raw=true)
+
+#### DFT com Seno e Cosseno Linearizado
+
+Utilizando as duas funções linearizadas e jé comparando com a DFT do Matlab, temos: 
+
+![alt text](https://github.com/jjoaosilva/TransformadaDiscretaDeFourrier/blob/master/imgs/DFT%2BerroComLSC.jpg?raw=true)
+
+
 
 
 ### Possíveis dúvidas
