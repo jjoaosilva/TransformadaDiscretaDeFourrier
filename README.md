@@ -87,5 +87,12 @@ Podemos observar um erro máximo de 0.3
 
 * Após a linezarização da função seno e cosseno, temos que uma DFT com 512 pontos era executada em 3 minutos e 15 segundos em um PIC18F4550 a 48MHz
 
+-------- | Tempos
+-------- | ------
+Original | 00:19:50
+CorteI   | 00:10:16
+LS       | 00:07:07
+LSC      | 00:03:15
+
 License
 O projeto é licenciado pela MIT License - veja a [LICENSE.md](LICENSE) para mais detalhes
