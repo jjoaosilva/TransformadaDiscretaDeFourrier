@@ -24,6 +24,8 @@ A partir daí, nossa DFT foi testada em um PIC18F4550 normalmente sem nenhuma ot
 
 ![alt text](https://github.com/jjoaosilva/TransformadaDiscretaDeFourrier/blob/master/imgs/DFT%2BerroSemL.jpg?raw=true)
 
+Podemos observar um erro máximo de 0.000045 
+
 ## Otimização
 
 ### Número de iterações
@@ -53,7 +55,7 @@ Utilizando a ferramenta Matlab, a função cosseno foi linearizada dessa forma:
 
 As equações podem ser vistas aqui: [cosseno](https://github.com/jjoaosilva/TransformadaDiscretaDeFourrier/blob/master/Linearizacao/LinearizacaoCosseno/equacoes.txt)
 
-###Testes Após linearização
+### Testes Após linearização
 
 #### Foram realizados dois testes: 
 * DFT apenas com Seno Linearizado
@@ -65,13 +67,25 @@ Utilizando apenas a função seno linearizada e jé comparando com a DFT do Matl
 
 ![alt text](https://github.com/jjoaosilva/TransformadaDiscretaDeFourrier/blob/master/imgs/DFT%2BerroComLS.jpg?raw=true)
 
+Podemos observar um erro máximo de 0.035 
+
 #### DFT com Seno e Cosseno Linearizado
 
 Utilizando as duas funções linearizadas e jé comparando com a DFT do Matlab, temos: 
 
 ![alt text](https://github.com/jjoaosilva/TransformadaDiscretaDeFourrier/blob/master/imgs/DFT%2BerroComLSC.jpg?raw=true)
 
+Podemos observar um erro máximo de 0.3
 
+### Resultados Finais
 
+* No primeiro teste, sem nenhuma modificação do algoritmo original, uma DFT com 512 pontos era executada em 19 minutos e 50 segundos em um PIC18F4550 a 48MHz
 
-### Possíveis dúvidas
+* Após a diminuição do número de interações, temos que uma DFT com 512 pontos era executada em 10 minutos e 16 segundos em um PIC18F4550 a 48MHz
+
+* Após a linezarização da função seno, temos que uma DFT com 512 pontos era executada em 7 minutos e 07 segundos em um PIC18F4550 a 48MHz
+
+* Após a linezarização da função seno e cosseno, temos que uma DFT com 512 pontos era executada em 3 minutos e 15 segundos em um PIC18F4550 a 48MHz
+
+License
+O projeto é licenciado pela MIT License - veja a [LICENSE.md](LICENSE) para mais detalhes
